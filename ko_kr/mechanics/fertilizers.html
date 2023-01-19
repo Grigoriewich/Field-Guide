@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html style="width:100%; height:100%; padding:0px; margin:0px;">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <meta charset="UTF-8">
+
+    <title>TerraFirmaCraft 도감</title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/6fa482c6e2.js" crossorigin="anonymous"></script>
+
+    <!-- JQuery, Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="../../style.css">
+
+    <script type="text/javascript">
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip();
+        })
+    </script>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-md fixed-top bg-dark">
+    <div class="navbar-header">
+        <a class="navbar-brand text-light" href="../">TerraFirmaCraft 도감</a>
+    </div>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-content" aria-controls="navbar-content" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbar-content">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle text-light" id="lang-dropdown-button" href="" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">한국어</a>
+                <div class="dropdown-menu" aria-labelledby="lang-dropdown-button">
+                    <a href="../../en_us/mechanics/fertilizers.html" class="dropdown-item">English</a>
+<a href="../../ko_kr/mechanics/fertilizers.html" class="dropdown-item">한국어</a>
+<a href="../../zh_cn/mechanics/fertilizers.html" class="dropdown-item">简体中文(中国大陆)</a>
+<a href="../../zh_tw/mechanics/fertilizers.html" class="dropdown-item">繁體中文(台灣)</a>
+                </div>
+            </li>
+            <li class="nav-item active"><a class="nav-link text-light" href="../">색인</a></li>
+            <li class="nav-item"><a class="nav-link text-light" href="https://terrafirmacraft.github.io/Documentation/"><i class="fa fa-cogs"></i> API 뮨서</a></li>
+            <li class="nav-item"><a class="nav-link text-light" href="https://github.com/TerraFirmaCraft/Field-Guide"><i class="fa fa-github"></i> GitHub</a></li>
+            <li class="nav-item"><a class="nav-link text-light" href="https://discord.gg/PRuAKvY"><i class="fab fa-discord"></i> Discord</a></li>
+            <li class="nav-item"><span class="nav-link text-light" href="#">버전 v2.2.4</span></li>
+        </ul>
+    </div>
+</nav>
+<div class="container-fluid" style="margin-top:50px">
+    <div class="row">
+        <div class="col-md-2 py-1">
+            <div class="sticky-top" style="top: 70px">
+                <h4>목차</h4>
+                <ul class="list-unstyled">
+                    <li><a class="text-muted" href="../the_world/">세계</a></li>
+<li><a class="text-muted" href="../getting_started/">시작하기</a></li>
+<li><a class="text-muted" href="../mechanics/">심화 기술</a><ul class="list-unstyled push-right"><li><a class="text-muted" href="./advanced_building_materials.html">발전된 재료</a></li>
+<li><a class="text-muted" href="./animal_husbandry.html">축산업</a></li>
+<li><a class="text-muted" href="./anvils.html">모루</a></li>
+<li><a class="text-muted" href="./aqueducts.html">수로</a></li>
+<li><a class="text-muted" href="./armor.html">갑옷</a></li>
+<li><a class="text-muted" href="./barrels.html">통</a></li>
+<li><a class="text-muted" href="./bellows.html">풀무</a></li>
+<li><a class="text-muted" href="./blast_furnace.html">용광로</a></li>
+<li><a class="text-muted" href="./bloomery.html">괴철로</a></li>
+<li><a class="text-muted" href="./bread.html">빵</a></li>
+<li><a class="text-muted" href="./charcoal_forge.html">숯불 노</a></li>
+<li><a class="text-muted" href="./charcoal_pit.html">숯 구덩이</a></li>
+<li><a class="text-muted" href="./chisel.html">끌</a></li>
+<li><a class="text-muted" href="./crops.html">작물</a></li>
+<li><a class="text-muted" href="./crucible.html">도가니</a></li>
+<li><a class="text-muted" href="./dairy.html">유제품</a></li>
+<li><a class="text-muted" href="./damage_types.html">피해 종류</a></li>
+<li><a class="text-muted" href="./decay.html">음식 보존</a></li>
+<li><a class="text-muted" href="./fertilizers.html">비료</a></li>
+<li><a class="text-muted" href="./fire_clay.html">내화점토</a></li>
+<li><a class="text-muted" href="./fishing.html">낚시</a></li>
+<li><a class="text-muted" href="./flux.html">플럭스</a></li>
+<li><a class="text-muted" href="./gems.html">보석</a></li>
+<li><a class="text-muted" href="./grill.html">모닥불과 석쇠</a></li>
+<li><a class="text-muted" href="./heating.html">가열하기</a></li>
+<li><a class="text-muted" href="./hydration.html">작물 수화</a></li>
+<li><a class="text-muted" href="./lamps.html">램프</a></li>
+<li><a class="text-muted" href="./leather_making.html">가죽 제작</a></li>
+<li><a class="text-muted" href="./lighting.html">광원</a></li>
+<li><a class="text-muted" href="./panning.html">사금질</a></li>
+<li><a class="text-muted" href="./pets.html">반려동물</a></li>
+<li><a class="text-muted" href="./pot.html">모닥불과 냄비</a></li>
+<li><a class="text-muted" href="./powderkegs.html">화약통</a></li>
+<li><a class="text-muted" href="./prospecting.html">광물 탐색</a></li>
+<li><a class="text-muted" href="./quern.html">맷돌</a></li>
+<li><a class="text-muted" href="./salad.html">샐러드</a></li>
+<li><a class="text-muted" href="./sandwiches.html">샌드위치</a></li>
+<li><a class="text-muted" href="./scribing_table.html">필기대</a></li>
+<li><a class="text-muted" href="./sluices.html">세광통</a></li>
+<li><a class="text-muted" href="./steel.html">강철</a></li>
+<li><a class="text-muted" href="./support_beams.html">지지대</a></li>
+<li><a class="text-muted" href="./weaving.html">직조</a></li>
+<li><a class="text-muted" href="./wooden_buckets.html">나무 양동이</a></li></ul></li>
+                </ul>
+            </div>
+        </div>
+        <div class="col-md-9 py-3">
+            <p><em><a class="text-muted" href="../">색인</a> / <a class="text-muted" href="./">심화 기술</a> / <a class="text-muted" href="#">비료</a></em></p>
+            
+                <h4>비료</h4>
+                <hr>
+                <h5>비옥화</h5>
+<p>비료는 <a href="../mechanics/crops.html">작물</a>에 영양분을 주기 위해 사용합니다. 비료를 들고 <span style="color:#490;">경작지</span>나 <span style="color:#490;">작물</span>에 <span style="color:#b0b;">오른쪽 버튼</span>을 클릭하면 비료를 줄 수 있습니다. 비료를 주면 입자들이 나타납니다.</p>
+
+        <div class="d-flex align-items-center justify-content-center">
+            <div class="crafting-recipe">
+                <img src="../../_images/crafting_shaped.png" />
+        
+                <div class="crafting-recipe-item crafting-recipe-pos-0-0">
+                    <span href="#" data-toggle="tooltip" title="Lumber" class="crafting-recipe-item-tooltip"></span>
+                    <img src="../../_images/item1.gif" />
+                </div>
+                
+                <div class="crafting-recipe-item crafting-recipe-pos-2-0">
+                    <span href="#" data-toggle="tooltip" title="Lumber" class="crafting-recipe-item-tooltip"></span>
+                    <img src="../../_images/item1.gif" />
+                </div>
+                
+                <div class="crafting-recipe-item crafting-recipe-pos-0-1">
+                    <span href="#" data-toggle="tooltip" title="Lumber" class="crafting-recipe-item-tooltip"></span>
+                    <img src="../../_images/item1.gif" />
+                </div>
+                
+                <div class="crafting-recipe-item crafting-recipe-pos-1-1">
+                    <span href="#" data-toggle="tooltip" title="Dirt" class="crafting-recipe-item-tooltip"></span>
+                    <img src="../../_images/item28.gif" />
+                </div>
+                
+                <div class="crafting-recipe-item crafting-recipe-pos-2-1">
+                    <span href="#" data-toggle="tooltip" title="Lumber" class="crafting-recipe-item-tooltip"></span>
+                    <img src="../../_images/item1.gif" />
+                </div>
+                
+                <div class="crafting-recipe-item crafting-recipe-pos-0-2">
+                    <span href="#" data-toggle="tooltip" title="Lumber" class="crafting-recipe-item-tooltip"></span>
+                    <img src="../../_images/item1.gif" />
+                </div>
+                
+                <div class="crafting-recipe-item crafting-recipe-pos-1-2">
+                    <span href="#" data-toggle="tooltip" title="Dirt" class="crafting-recipe-item-tooltip"></span>
+                    <img src="../../_images/item28.gif" />
+                </div>
+                
+                <div class="crafting-recipe-item crafting-recipe-pos-2-2">
+                    <span href="#" data-toggle="tooltip" title="Lumber" class="crafting-recipe-item-tooltip"></span>
+                    <img src="../../_images/item1.gif" />
+                </div>
+                
+                <div class="crafting-recipe-item crafting-recipe-pos-out">
+                    <span href="#" data-toggle="tooltip" title="퇴비통" class="crafting-recipe-item-tooltip"></span>
+                    
+                    <img src="../../_images/placeholder_64.png" />
+                </div>
+            </div>
+        </div>
+        <p>퇴비통은 비료를 만들 때 필수적인 도구입니다. 퇴비통을 사용하려면 <span style="color:#00AA00;">초록색</span>과 <span style="color:#AA0000;">갈색</span> 아이템이 필요합니다. 어떤 아이템들은 다른 아이템보다 많은 양의 퇴비를 만듭니다. 아이템틀 퇴비통에 넣으려면 <span style="color:#b0b;">오른쪽 버튼</span>을 누르세요.</p>
+
+        <div style="text-align: center;">
+            <p class="text-muted"><span href="#" data-toggle="tooltip" title="이 아이템을 확인하려면 Minecraft에서 도감을 확인하세요.">아이템: <code>#tfc:compost_greens_low</code></span></p>
+        </div>
+        <p>어떤 <span style="color:#00AA00;">초록색</span> 아이템들은 적은 양의 퇴비를 만듭니다. 이런 아이템에는 식물 등이 있습니다. 퇴비통의 초록색 아이템 요구량을 모두 채우기 위해서는 16개의 아이템이 필요합니다.</p>
+
+        <div class="item-header">
+            <span href="#" data-toggle="tooltip" title="Compost Greens">
+                <img src="../../_images/item29.gif" alt="Compost Greens" />
+            </span>
+            <h5>Compost Greens</h5>
+        </div>
+        <p>어떤 <span style="color:#00AA00;">초록색</span> 아이템들은 적당한 양의 퇴비를 만듭니다. 이런 아이템에는 곡물 등이 있습니다. 퇴비통의 초록색 아이템 요구량을 모두 채우기 위해서는 8개의 아이템이 필요합니다.</p>
+
+        <div class="item-header">
+            <span href="#" data-toggle="tooltip" title="Rich Compost Greens">
+                <img src="../../_images/item30.gif" alt="Rich Compost Greens" />
+            </span>
+            <h5>Rich Compost Greens</h5>
+        </div>
+        <p>어떤 <span style="color:#00AA00;">초록색</span> 아이템들은 많은 양의 퇴비를 만듭니다. 이런 아이템에는 과일과 채소 등이 있습니다 퇴비통의 초록색 아이템 요구량을 모두 채우기 위해서는 4개의 아이템이 필요합니다.</p>
+
+        <div class="item-header">
+            <span href="#" data-toggle="tooltip" title="Poor Compost Browns">
+                <img src="../../_images/item31.gif" alt="Poor Compost Browns" />
+            </span>
+            <h5>Poor Compost Browns</h5>
+        </div>
+        <p>어떤 <span style="color:#AA0000;">갈색</span> 적은 양의 퇴비를 만듭니다. 이런 아이템에는 마른 갈대, 나무고사리, 덤불 등의 큰 식물들과 낙엽 등이 있습니다. 퇴비통의 갈색 아이템 요구량을 모두 채우기 위해서는 16개의 아이템이 필요합니다.</p>
+
+        <div class="item-header">
+            <span href="#" data-toggle="tooltip" title="Compost Browns">
+                <img src="../../_images/item32.gif" alt="Compost Browns" />
+            </span>
+            <h5>Compost Browns</h5>
+        </div>
+        <p>어떤 <span style="color:#AA0000;">갈색</span> 아이템들은 적당한 양의 퇴비를 만듭니다. 이런 아이템에는 나뭇재와 황마 등이 있습니다. 퇴비통의 갈색 아이템 요구량을 모두 채우기 위해서는 8개의 아이템이 필요합니다.</p>
+
+        <div class="item-header">
+            <span href="#" data-toggle="tooltip" title="Rich Compost Browns">
+                <img src="../../_images/item33.gif" alt="Rich Compost Browns" />
+            </span>
+            <h5>Rich Compost Browns</h5>
+        </div>
+        <p>어떤 <span style="color:#AA0000;">갈색</span> 아이템들은 많은 양의 퇴비를 만듭니다. 이런 아이템에는 수박, 호박, 죽은 잔디, 솔방울, 부식토, 유목 등이 있습니다. 퇴비통의 갈색 아이템 요구량을 모두 채우기 위해서는 4개의 아이템이 필요합니다.</p>
+
+        <div class="item-header">
+            <span href="#" data-toggle="tooltip" title="Compost Poisons">
+                <img src="../../_images/item34.gif" alt="Compost Poisons" />
+            </span>
+            <h5>Compost Poisons</h5>
+        </div>
+        <p>어떤 아이템들은 퇴비에 <span style="color:#FF5555;">독</span>을 풀 것입니다. 이런 아이템에는 <span style="color:#FF5555;">고기</span>와 <span style="color:#FF5555;">뼈</span> 등이 있습니다. 썩은 퇴비를 작물에 사용하면 즉시 죽어버립니다.</p>
+<p>퇴비통은 특정 조건에서는 더 잘 작동합니다. 퇴비통 위에 눈이 쌓여있다면 약간 더 빨리 작동합니다. 강수량이 150mm 이하이거나 350mm 이상인 곳에서는 더욱 느리게 작동합니다. 또한, 다른 퇴비통과 맞닿아 있는 퇴비통도 느리게 작동합니다.</p>
+
+        <div class="item-header">
+            <span href="#" data-toggle="tooltip" title="퇴비">
+                <img src="../../_images/item35.png" alt="퇴비" />
+            </span>
+            <h5>퇴비</h5>
+        </div>
+        <p>퇴비는 퇴비통의 생산품입니다. <br/>
+</p>
+<ul>
+	<li><span style="color:#55FFFF;">질소: 40</span></li>
+	<li><span style="color:#FFAA00;">인: 20</span></li>
+	<li><span style="color:#FF55FF;">칼륨: 40</span></li>
+</ul>
+
+        <div class="item-header">
+            <span href="#" data-toggle="tooltip" title="뼛가루">
+                <img src="../../_images/item36.png" alt="뼛가루" />
+            </span>
+            <h5>뼛가루</h5>
+        </div>
+        <p>뼛가루는 뼈를 갈아 만들 수 있습니다. <br/>
+</p>
+<ul>
+	<li><span style="color:#FFAA00;">인: 10</span></li>
+</ul>
+
+        <div class="item-header">
+            <span href="#" data-toggle="tooltip" title="초석 가루">
+                <img src="../../_images/item5.png" alt="초석 가루" />
+            </span>
+            <h5>초석 가루</h5>
+        </div>
+        <p>초석은 초석 광석으로 만들 수 있습니다. <br/>
+</p>
+<ul>
+	<li><span style="color:#55FFFF;">질소: 10</span></li>
+	<li><span style="color:#FF55FF;">칼륨: 40</span></li>
+</ul>
+
+        <div class="item-header">
+            <span href="#" data-toggle="tooltip" title="구아노">
+                <img src="../../_images/item37.png" alt="구아노" />
+            </span>
+            <h5>구아노</h5>
+        </div>
+        <p>구아노는 땅 속 깊이 또는 자갈 해변에서 찾을 수 있습니다. <br/>
+</p>
+<ul>
+	<li><span style="color:#55FFFF;">질소: 80</span></li>
+	<li><span style="color:#FFAA00;">인: 50</span></li>
+	<li><span style="color:#FF55FF;">칼륨: 10</span></li>
+</ul>
+
+        <div class="item-header">
+            <span href="#" data-toggle="tooltip" title="나뭇재">
+                <img src="../../_images/item38.png" alt="나뭇재" />
+            </span>
+            <h5>나뭇재</h5>
+        </div>
+        <p>나뭇재는 모닥불을 부수어 만들 수 있습니다. <br/>
+</p>
+<ul>
+	<li><span style="color:#FFAA00;">인: 10</span></li>
+	<li><span style="color:#FF55FF;">칼륨: 30</span></li>
+</ul>
+
+        <div class="item-header">
+            <span href="#" data-toggle="tooltip" title="칼리암염 가루">
+                <img src="../../_images/item39.png" alt="칼리암염 가루" />
+            </span>
+            <h5>칼리암염 가루</h5>
+        </div>
+        <p>칼리암염은 칼리암염 광석으로 만들 수 있습니다. <br/>
+</p>
+<ul>
+	<li><span style="color:#FF55FF;">칼륨: 50</span></li>
+</ul>
+
+                
+        </div>
+    </div>
+</div>
+</body>
+</html>
